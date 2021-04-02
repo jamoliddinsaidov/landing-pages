@@ -12,6 +12,7 @@
 
 body {
 	font-family: 'Heebo', sans-serif;
+	overflow-x: hidden;
 }
 
 html {
@@ -287,4 +288,179 @@ footer p {
 	font-size: 1.2rem;
 	text-align: center;
 	padding: 2rem;
+}
+
+/* ========== */
+/* Mobile View */
+/* ========== */
+
+@media screen and (max-width: 380px) {
+	/* ===== Navigation ===== */
+
+	nav {
+		max-width: 90%;
+	}
+
+	nav ul {
+		justify-content: space-between;
+	}
+
+	nav a {
+		font-size: 1.1rem;
+		font-weight: 700;
+	}
+
+	/* ===== Header Section ===== */
+	header {
+		max-width: 95%;
+		min-height: 80vh;
+	}
+
+	header div {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-content {
+		width: 100%;
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero-content h1 {
+		font-size: var(--header3);
+		text-align: center;
+	}
+
+	.hero-content p {
+		margin: 2rem auto;
+		font-size: 1.1rem;
+		text-align: justify;
+		width: 90%;
+	}
+
+	.hero-btn {
+		align-self: center;
+	}
+
+	.hero-image {
+		align-self: center;
+		order: 1;
+	}
+
+	/* ===== Blog Section ===== */
+
+	.blog-main-container {
+		max-width: 90%;
+	}
+
+	.blog-intro {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.blog-intro p {
+		font-size: 1.4rem;
+		padding: 2rem o;
+	}
+
+	.blog-intro a {
+		display: none;
+	}
+
+	.blog-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.blog-content {
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.first {
+		margin-right: 0;
+	}
+
+	.blog-content h2 {
+		font-size: 1.7rem;
+	}
+
+	.blog-date {
+		max-width: 95%;
+	}
+
+	.blog-date {
+		font-size: var(--text);
+	}
+
+	.blog-para {
+		font-size: 1.3rem;
+		text-align: justify;
+	}
+	/* ===== Works Section ===== */
+	#works {
+		max-width: 90%;
+		margin: 1rem auto;
+	}
+
+	.works-intro {
+		text-align: center;
+		font-weight: 500;
+	}
+
+	.works-card {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.works-img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.works-content {
+		margin-left: 0rem;
+	}
+
+	.works-content h3 {
+		font-size: 1.7rem;
+		font-weight: 700;
+		margin-top: 1rem;
+	}
+
+	.works-date {
+		max-width: 50%;
+		margin: 2rem 0;
+	}
+
+	.works-para {
+		font-size: 1.2rem;
+		text-align: justify;
+	}
+
+	.card-3 {
+		display: none;
+	}
+	/* ===== Footer Section ===== */
+	footer {
+		max-width: 90%;
+		min-height: 15vh;
+	}
+
+	footer ul {
+		width: 65%;
+	}
+
+	footer p {
+		font-size: 1rem;
+		text-align: center;
+		padding: 2rem 0;
+	}
 }
