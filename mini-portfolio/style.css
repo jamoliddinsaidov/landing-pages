@@ -306,7 +306,7 @@ footer p {
 /* Mobile View */
 /* ========== */
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
 	/* ===== Navigation ===== */
 
 	nav {
