@@ -52,8 +52,8 @@ function showPrices(index) {
 
 function showSuccess() {
 	if (
-		mainContainer.classList.contains('close') ||
-		modalMoneyContainers.classList.contains('show')
+		mainContainer.classList.contains('close') &&
+		modalContainer.classList.contains('show')
 	) {
 		mainContainer.classList.remove('close');
 		modalContainer.classList.remove('show');
