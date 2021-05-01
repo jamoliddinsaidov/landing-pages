@@ -42,8 +42,19 @@
 					<button class="back-btn">Back this project</button>
 
 					<button class="bookmark-btn">
-						<img src="./images/icon-bookmark.svg" alt="bookmark" />
-						<p>Bookmark</p>
+						<!-- <img src="./images/icon-bookmark.svg" alt="bookmark" /> -->
+						<svg
+							width="56"
+							height="56"
+							xmlns="http://www.w3.org/2000/svg"
+							class="bookmark-svg"
+						>
+							<g fill="none" fill-rule="evenodd">
+								<circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+								<path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+							</g>
+						</svg>
+						<p class="bookmark-text">Bookmark</p>
 					</button>
 				</div>
 			</div>
@@ -156,7 +167,7 @@
 				<div class="modal-desc">
 					<div class="modal-title">
 						<h2>Back this project</h2>
-						<button>
+						<button class="close-btn">
 							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
@@ -178,11 +189,20 @@
 					<div class="option-container">
 						<p class="modal-option">Pledge with no reward</p>
 					</div>
+
 					<p class="modal-card-desc">
 						Choose to support us without a reward if you simply believe in our
 						project. As a backer, you will be signed up to receive product
 						updates via email.
 					</p>
+
+					<div class="modal-money-container">
+						<p>Enter your pledge</p>
+						<div class="modal-money">
+							<input type="text" placeholder="$..." required />
+							<button class="continue-btn">Continue</button>
+						</div>
+					</div>
 				</div>
 
 				<!-- single card -->
@@ -279,5 +299,7 @@
 				<button class="success-btn">Got it!</button>
 			</div>
 		</div>
+
+		<script src="./app.js"></script>
 	</body>
 </html>

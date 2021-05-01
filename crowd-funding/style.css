@@ -19,6 +19,18 @@ body {
 	position: relative;
 }
 
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: rgb(238, 238, 238);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--moderate-cyan);
+}
+
 a {
 	text-decoration: none;
 }
@@ -41,8 +53,9 @@ button {
 }
 
 main {
-	display: block;
-	transition: display 0.3s ease-in-out;
+	/* display: block; */
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
 }
 
 /* ===== Header, Navigation ===== */
@@ -178,7 +191,7 @@ main {
 	color: inherit;
 }
 
-.bookmark-btn img {
+.bookmark-btn svg {
 	pointer-events: none;
 }
 
@@ -311,7 +324,9 @@ main {
 	position: absolute;
 	left: 0;
 	top: 0;
-	display: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease-in-out;
 }
 
 .modal,
@@ -382,8 +397,10 @@ main {
 	margin-top: 2rem;
 	padding-top: 1rem;
 	position: relative;
-	display: none;
-	transition: display 0.4s ease-in-out;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
 }
 
 .modal-money-container p {
@@ -414,6 +431,10 @@ main {
 	outline: none;
 }
 
+.success-parent {
+	padding-top: 8rem;
+}
+
 .success-modal-container {
 	display: flex;
 	flex-direction: column;
@@ -422,6 +443,7 @@ main {
 	width: 40%;
 	text-align: center;
 	padding: 3rem 4rem;
+	z-index: 20;
 }
 
 .success-modal-container svg,
@@ -440,4 +462,21 @@ main {
 .success-modal-container button {
 	transition: all 0.3s ease-in-out;
 	border-radius: 2rem;
+}
+
+.close {
+	display: none;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.show,
+.price-show {
+	display: block;
+	opacity: 1;
+	pointer-events: all;
+}
+
+.price-show {
+	position: relative;
 }
