@@ -53,7 +53,6 @@ button {
 }
 
 main {
-	/* display: block; */
 	opacity: 1;
 	transition: all 0.5s ease-in-out;
 }
@@ -143,6 +142,7 @@ main {
 .intro-desc p {
 	color: var(--dark-gray);
 	font-weight: 500;
+	line-height: 150%;
 }
 
 .intro-btns {
@@ -380,6 +380,7 @@ main {
 
 .last .modal-option {
 	color: #000;
+	pointer-events: none;
 }
 
 .option-container p {
@@ -421,15 +422,13 @@ main {
 	font-family: inherit;
 }
 
-.modal-money button {
-	background: var(-);
-}
-
 .modal-money input {
 	border: 1px solid var(--moderate-cyan);
 	width: 30%;
 	outline: none;
 }
+
+/* ===== Success popup ===== */
 
 .success-parent {
 	padding-top: 8rem;
@@ -479,4 +478,195 @@ main {
 
 .price-show {
 	position: relative;
+}
+
+/* ===== Mobile View ===== */
+
+@media screen and (max-width: 480px) {
+	/* ===== Header, Navigation ===== */
+	header {
+		/* width: 100%;
+		min-height: 50vh; */
+		background-image: url('./images/image-hero-mobile.jpg');
+		/* padding: 2rem 0rem; */
+	}
+
+	nav {
+		width: 95%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.links {
+		width: 90%;
+		margin-top: 1rem;
+	}
+
+	.links li {
+		margin-left: 0rem;
+	}
+
+	/* ===== Main Section ===== */
+	main {
+		width: 90%;
+	}
+
+	.intro,
+	.statistics,
+	.about,
+	.modal,
+	.success-modal-container {
+		padding: 2rem 1.5rem;
+	}
+
+	/* ===== Intro card ===== */
+
+	.intro-desc h1 {
+		font-size: 1.4rem;
+		margin: 1rem 0 0.5rem;
+	}
+
+	.intro-desc p {
+		font-weight: 500;
+		font-size: 0.9rem;
+	}
+
+	.intro-btns {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.intro-btns button {
+		font-size: 1rem;
+	}
+
+	.back-btn {
+		margin-bottom: 1.5rem;
+	}
+
+	/* ===== Statistics Card ===== */
+	.data-container {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.data-border {
+		border-right: none;
+		border-bottom: 1px solid var(--light-gray);
+		min-height: 1vh;
+		width: 50%;
+
+		margin: 1rem 0;
+	}
+
+	.data h2 {
+		font-size: 1.9rem;
+		line-height: 170%;
+	}
+
+	/* ===== About Card ===== */
+	.about-intro p {
+		font-size: 0.9rem;
+	}
+
+	.about-card,
+	.modal-card {
+		padding: 2rem 1rem;
+	}
+
+	.about-card-headline,
+	.about-card-action {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.price {
+		margin-top: 0.5rem;
+	}
+
+	.about-card-info {
+		font-size: 0.9rem;
+	}
+
+	.about-card-action {
+		margin: 1rem 0;
+		align-items: center;
+	}
+
+	.about-number {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.reward-btn {
+		font-size: 1.2rem;
+		width: 100%;
+	}
+
+	/* ===== Modal Section ===== */
+	.modal,
+	.success-modal-container {
+		width: 90%;
+	}
+
+	.modal-title h2 {
+		font-size: 1.3rem;
+	}
+
+	.modal-desc p {
+		font-size: 0.9rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.option-container,
+	.modal-money-container {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.modal-card .modal-option {
+		font-size: 1rem;
+	}
+
+	.modal-card .about-number {
+		margin-top: 1rem;
+	}
+
+	.modal-card-desc {
+		font-size: 0.9rem;
+	}
+
+	.modal-money-container p {
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.modal-money {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.modal-money input,
+	.modal-money button {
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	/* ===== Success popup ===== */
+	.success-parent {
+		padding-top: 4rem;
+	}
+
+	.success-modal-container p {
+		font-size: 0.9rem;
+		text-align: justify;
+	}
 }
