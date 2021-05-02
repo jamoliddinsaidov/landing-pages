@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700;800;900&display=swap');
+
+:root {
+	--bright-red: hsl(12, 88%, 59%);
+	--dark-blue: hsl(228, 39%, 23%);
+	--dark-grayish-blue: hsl(227, 12%, 61%);
+	--very-dark-blue: hsl(233, 12%, 13%);
+	--pale-red: hsl(12, 100%, 69%);
+	--very-light-gray: hsl(0, 0%, 98%);
+	--primary-font: 'Be Vietnam', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--primary-font);
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: hsl(12, 88%, 59%);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+button {
+	transition: all 0.3s ease-in-out;
+}
+
+button {
+	cursor: pointer;
+	font-family: inherit;
+	outline: none;
+	padding: 0.7rem 1.6rem;
+	border: none;
+	border-radius: 2rem;
+	background: var(--bright-red);
+	color: #fff;
+	box-shadow: 0px 2px 5px var(--bright-red);
+}
+
+button:hover {
+	background: var(--pale-red);
+}
+
+.background-illustration {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('./images/bg-simplify-section-desktop.svg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	pointer-events: none;
+	z-index: -10;
+}
+
+/* ===== Navigation ===== */
+
+header,
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	min-height: 10vh;
+	padding: 3rem 0;
+}
+
+.links,
+header,
+.stat-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links li {
+	padding: 0 1rem;
+}
+
+.links a {
+	color: var(--very-dark-blue);
+	font-weight: 500;
+}
+
+.links a:hover {
+	color: var(--dark-grayish-blue);
+}
