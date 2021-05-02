@@ -107,7 +107,8 @@ header {
 header,
 .stat-section,
 .difference-section,
-.diff-card {
+.diff-card,
+.testimonials-cards {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -146,8 +147,11 @@ header,
 	color: var(--dark-grayish-blue);
 }
 
-.stat-image {
-	flex-basis: 70rem;
+.stat-image,
+.stat-description,
+.diff-description,
+.diff-cards {
+	width: 50%;
 }
 
 .stat-image img {
@@ -172,7 +176,7 @@ header,
 
 .diff-description h1 {
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	line-height: 120%;
 	margin-bottom: 2rem;
 }
@@ -182,11 +186,7 @@ header,
 	font-size: 1rem;
 	line-height: 150%;
 	color: var(--dark-grayish-blue);
-	width: 90%;
-}
-
-.diff-cards {
-	margin-right: -4rem;
+	width: 70%;
 }
 
 .diff-card button {
@@ -208,4 +208,53 @@ header,
 	font-size: 1rem;
 	color: var(--dark-grayish-blue);
 	width: 80%;
+}
+
+/* ===== Testimonials Section ===== */
+.testimonials-section h1 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.testimonials-cards {
+	margin: 5rem 0 3rem;
+	width: 100%;
+}
+
+.testimonial-card {
+	position: relative;
+	border-radius: 0.5rem;
+	background: var(--very-light-gray);
+	color: var(--dark-grayish-blue);
+	text-align: center;
+	margin: 0 0.5rem;
+	padding: 2rem;
+}
+
+.testimonial-card img {
+	width: 15%;
+	position: absolute;
+	top: -25%;
+	left: 50%;
+	transform: translate(-50%, 25%);
+}
+
+.testimonial-card h3 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.testimonial-card p {
+	color: var(--dark-grayish-blue);
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.testimonials-section button {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-bottom: 10rem;
 }
