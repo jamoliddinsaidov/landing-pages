@@ -14,6 +14,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	color: var(--dark-blue);
 }
 
 body {
@@ -64,25 +65,36 @@ button:hover {
 	background: var(--pale-red);
 }
 
-.background-illustration {
+/* ====== Illustration ===== */
+.background-illustration,
+.diff-illustration {
 	position: absolute;
-	top: 0;
-	right: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-image: url('./images/bg-simplify-section-desktop.svg');
 	background-repeat: no-repeat;
-	background-position: right;
 	background-size: cover;
 	pointer-events: none;
 	z-index: -10;
 }
 
-/* ===== Navigation ===== */
+.background-illustration {
+	top: 0;
+	right: 0;
+	background-position: right;
+}
 
+.diff-illustration {
+	left: -30%;
+	bottom: 10%;
+	background-position: left;
+}
+
+/* ===== Navigation ===== */
 header,
-main {
-	width: 90%;
+.stat-section,
+.difference-section {
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -93,7 +105,9 @@ header {
 
 .links,
 header,
-.stat-section {
+.stat-section,
+.difference-section,
+.diff-card {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -104,10 +118,94 @@ header,
 }
 
 .links a {
-	color: var(--very-dark-blue);
 	font-weight: 500;
 }
 
 .links a:hover {
 	color: var(--dark-grayish-blue);
+}
+
+/* ===== Statistics Section ===== */
+.stat-section {
+	min-height: 90vh;
+}
+
+.stat-description h1 {
+	font-size: 3.5rem;
+	line-height: 120%;
+	margin-bottom: 2rem;
+	font-weight: 800;
+}
+
+.stat-description p {
+	font-size: 1rem;
+	line-height: 150%;
+	margin-bottom: 2rem;
+	font-weight: 500;
+	width: 70%;
+	color: var(--dark-grayish-blue);
+}
+
+.stat-image {
+	flex-basis: 70rem;
+}
+
+.stat-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* ===== Difference Section ===== */
+.section-diff-container {
+	width: 100%;
+	position: relative;
+}
+
+.difference-section {
+	margin: 3rem auto;
+}
+
+.diff-description {
+	align-self: flex-start;
+}
+
+.diff-description h1 {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 120%;
+	margin-bottom: 2rem;
+}
+
+.diff-description p {
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 150%;
+	color: var(--dark-grayish-blue);
+	width: 90%;
+}
+
+.diff-cards {
+	margin-right: -4rem;
+}
+
+.diff-card button {
+	align-self: flex-start;
+	margin-right: 1rem;
+	pointer-events: none;
+}
+
+.diff-details {
+	margin-bottom: 3rem;
+}
+
+.diff-details h2 {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.diff-details p {
+	font-size: 1rem;
+	color: var(--dark-grayish-blue);
+	width: 80%;
 }
