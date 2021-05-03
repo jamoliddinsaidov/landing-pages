@@ -49,7 +49,8 @@ button {
 	transition: all 0.3s ease-in-out;
 }
 
-button {
+button,
+.get-started {
 	cursor: pointer;
 	font-family: inherit;
 	outline: none;
@@ -85,8 +86,8 @@ button:hover {
 }
 
 .diff-illustration {
-	left: -30%;
-	bottom: 10%;
+	left: -10%;
+	bottom: 0;
 	background-position: left;
 }
 
@@ -108,7 +109,10 @@ header,
 .stat-section,
 .difference-section,
 .diff-card,
-.testimonials-cards {
+.testimonials-cards,
+.call-to-action,
+footer,
+.footer-links {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -158,6 +162,7 @@ header,
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	pointer-events: none;
 }
 
 /* ===== Difference Section ===== */
@@ -230,6 +235,12 @@ header,
 	text-align: center;
 	margin: 0 0.5rem;
 	padding: 2rem;
+	box-shadow: 0px 0px 0px var(--very-light-gray);
+	transition: box-shadow 0.4s ease-in-out;
+}
+
+.testimonial-card:hover {
+	box-shadow: 1px 1px 5px 1px var(--dark-grayish-blue);
 }
 
 .testimonial-card img {
@@ -257,4 +268,119 @@ header,
 	left: 50%;
 	transform: translate(-50%, 0);
 	margin-bottom: 10rem;
+}
+
+/* ===== Call to Action Section ===== */
+.call-to-action {
+	width: 100%;
+	min-height: 15vh;
+	background: var(--bright-red);
+	padding: 3rem 6rem;
+	position: relative;
+}
+
+.call-to-action h2 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: #fff;
+	width: 40%;
+}
+
+.call-to-action button,
+.inbox-btns button:first-child {
+	background: var(--very-light-gray);
+	color: var(--bright-red);
+	box-shadow: 1px 1px 2px var(--very-light-gray);
+	border: 2px solid var(--very-light-gray);
+}
+
+.call-to-action button:hover {
+	color: var(--very-light-gray);
+	background: var(--bright-red);
+	box-shadow: none;
+	border: 2px solid var(--very-light-gray);
+}
+
+.up-illustration {
+	width: 100%;
+	height: 100%;
+	background-image: url('./images/call-to-action.svg');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	pointer-events: none;
+	z-index: -10;
+}
+
+.up-illustration {
+	top: 0;
+	left: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+	width: 100%;
+	min-height: 30vh;
+	background: var(--very-dark-blue);
+	padding: 2rem 6rem;
+}
+
+.social-media,
+.inbox {
+	min-height: 20vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.social-links svg {
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+.social-links svg path {
+	transition: fill 0.2s ease-in-out;
+}
+
+.social-links svg path:hover {
+	fill: var(--bright-red);
+}
+
+.footer-links {
+	align-items: flex-start;
+	min-height: 20vh;
+}
+
+.footer-links ul:first-child {
+	margin-right: 8rem;
+}
+
+.footer-links li {
+	margin-bottom: 1rem;
+}
+
+.footer-links a {
+	color: var(--very-light-gray);
+	font-size: 1rem;
+}
+
+.footer-links a:hover {
+	color: var(--bright-red);
+}
+
+.inbox-btns button:first-child {
+	box-shadow: none;
+	color: gray;
+}
+
+.inbox-btns .get-started {
+	box-shadow: none;
+	margin-right: 0.5rem;
+}
+
+.copyright {
+	align-self: flex-end;
+	color: gray;
+	font-size: 0.8rem;
 }
