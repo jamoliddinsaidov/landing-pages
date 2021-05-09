@@ -112,7 +112,6 @@ form button {
 	background: var(--primary-color);
 	color: var(--light-gray);
 	letter-spacing: 1.5px;
-	font-family: 2rem;
 	border: 2px solid transparent;
 	transition: all 0.3s ease-in-out;
 }
@@ -446,4 +445,231 @@ footer {
 	display: inline-block;
 	margin: 0 0.5rem;
 	cursor: pointer;
+}
+
+/* ===== Mobile View ====== */
+@media screen and (max-width: 480px) {
+	/* ===== Navigation ===== */
+	nav {
+		width: 95%;
+	}
+
+	nav,
+	.links,
+	header,
+	.single-work,
+	.process-content,
+	.microsoft-imgs,
+	.footer-content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.links {
+		margin-top: 1rem;
+	}
+
+	.links li {
+		padding: 0.5rem 0;
+	}
+
+	/* ===== Header Section ===== */
+	header {
+		width: 95%;
+	}
+
+	.header-description {
+		text-align: center;
+		order: 1;
+		margin-bottom: 2rem;
+	}
+
+	.header-img {
+		order: 2;
+	}
+
+	.header-description h1 {
+		font-size: 3rem;
+		font-weight: 800;
+	}
+
+	.header-description p {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+	}
+
+	.header-img {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-img img {
+		width: 100%;
+	}
+
+	/* ===== About Section ===== */
+	#about-section {
+		width: 100%;
+		min-height: 20vh;
+		background: #fff;
+		padding: 5rem 0;
+	}
+
+	.about-content {
+		text-align: center;
+	}
+
+	.about-content h2,
+	.how-work-description h2,
+	.contact-description h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
+	.about-content p,
+	.how-work-description p,
+	.contact-description p {
+		width: 85%;
+	}
+
+	/* ===== Work Section ===== */
+	.work-content {
+		width: 90%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.single-work {
+		padding-top: 1rem;
+	}
+
+	/* ====== Process Section ===== */
+	.process-content {
+		width: 95%;
+	}
+
+	.process-img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.process-img img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.skills-container {
+		width: 95%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.skills-container h3 {
+		font-weight: 700;
+	}
+
+	.skills {
+		width: 90%;
+	}
+
+	/* ===== How Works Section ===== */
+	.how-work {
+		width: 95%;
+	}
+	.how-work-description p {
+		width: 100%;
+	}
+
+	.how-work-img {
+		width: 100%;
+	}
+
+	.how-work-img img {
+		object-fit: cover;
+	}
+
+	/* ====== Gallery Section ====== */
+	.paper,
+	.pen-laptop {
+		width: 50%;
+		height: 10rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	.hover-img {
+		height: 10rem;
+	}
+
+	.hover-img img {
+		width: 50%;
+		height: 50%;
+	}
+
+	.paper {
+		background-image: url('./imgs/papers.png');
+	}
+
+	.pen-laptop {
+		background-image: url('./imgs/pen-laptop.png');
+	}
+
+	.paper:nth-child(3) {
+		order: 4;
+	}
+
+	.pen-laptop:nth-child(4) {
+		oreder: 3;
+	}
+
+	.paper:nth-child(5),
+	.pen-laptop:last-child,
+	.microsoft:last-child,
+	.microsoft:nth-child(3) {
+		display: none;
+	}
+
+	/* /===== Contact Section ====== */
+	#contact {
+		width: 95%;
+	}
+
+	.contact-description p,
+	#contact form {
+		width: 95%;
+	}
+
+	.inputs input:first-child {
+		margin-right: 0rem;
+		margin-bottom: 1rem;
+	}
+
+	.inputs {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	form button {
+		width: 100%;
+	}
+
+	/* ===== Footer Section ====== */
+	.footer-content {
+		width: 95%;
+	}
+
+	.copyright {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.socials img {
+		margin: 0 1.5rem;
+	}
 }
