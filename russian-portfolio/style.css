@@ -21,6 +21,18 @@ body {
 	background: var(--light-gray);
 }
 
+body::-webkit-scrollbar {
+	width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: var(--light-gray);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -49,7 +61,9 @@ nav,
 header,
 .work-content,
 .single-work,
-.process-content {
+.process-content,
+.microsoft-imgs,
+.footer-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -90,7 +104,8 @@ header {
 	color: var(--dark-gray);
 }
 
-.header-description button {
+.header-description button,
+form button {
 	padding: 1rem 2rem;
 	outline: none;
 	cursor: pointer;
@@ -102,7 +117,8 @@ header {
 	transition: all 0.3s ease-in-out;
 }
 
-.header-description button:hover {
+.header-description button:hover,
+form button:hover {
 	color: var(--primary-color);
 	background: var(--light-gray);
 	border: 2px solid var(--primary-color);
@@ -121,7 +137,8 @@ header {
 }
 
 .about-content h2,
-.how-work-description h2 {
+.how-work-description h2,
+.contact-description h2 {
 	font-size: 2rem;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -129,7 +146,8 @@ header {
 }
 
 .about-content p,
-.how-work-description p {
+.how-work-description p,
+.contact-description p {
 	width: 40%;
 	margin: 0 auto;
 	text-align: center;
@@ -281,7 +299,7 @@ header {
 /* ====== Gallery Section ====== */
 .gallery {
 	width: 100%;
-	display: block;
+	margin-top: 2rem;
 }
 
 .gallery-imgs {
@@ -291,12 +309,36 @@ header {
 
 .paper,
 .pen-laptop {
-	width: 21rem;
+	width: 33.33%;
 	height: 20rem;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	transition: background-image 0.3s ease-in-out;
+	position: relative;
+}
+
+.hover-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 20rem;
+	background: rgb(52, 84, 122, 0.8);
+	opacity: 0;
+	cursor: pointer;
+	z-index: 10;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.hover-img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hover-img:hover {
+	opacity: 1;
 }
 
 .paper {
@@ -305,4 +347,103 @@ header {
 
 .pen-laptop {
 	background-image: url('./imgs/pen-laptop.png');
+}
+
+/* ===== Micorosft Section ===== */
+.microsoft-section {
+	width: 100%;
+	background: #fff;
+	padding: 5rem 0;
+}
+
+.microsoft-imgs {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* /===== Contact Section ====== */
+#contact {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 0;
+}
+
+.contact-description {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.contact-description p {
+	width: 50%;
+}
+
+#contact form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+form input,
+.msg {
+	width: 100%;
+	background: #fff;
+	color: var(--dark-gray);
+	padding: 1rem;
+	border: none;
+	outline: none;
+	color: var(--primary-color);
+	font-size: 1.1rem;
+}
+
+form input:focus,
+.msg:focus {
+	border: 1px solid var(--primary-color);
+}
+
+.inputs input:first-child {
+	margin-right: 1rem;
+}
+
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+form button {
+	margin-top: 3rem;
+	padding: 1rem 3rem;
+	align-self: center;
+}
+
+/* ===== Footer Section ====== */
+footer {
+	width: 100%;
+	background: var(--primary-color);
+	padding: 2rem 0;
+}
+
+.footer-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.copyright {
+	color: #fff;
+}
+
+.name {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.socials img {
+	display: inline-block;
+	margin: 0 0.5rem;
+	cursor: pointer;
 }
