@@ -3,6 +3,7 @@
 :root {
 	--text-color: #333347;
 	--background-color: #f0f5f9;
+	--success-color: #21bf73;
 }
 
 /* Navigation menu */
@@ -36,6 +37,7 @@
 	color: #fff;
 	border-color: #fff;
 	outline-color: #fff;
+	background-color: var(--success-color);
 }
 
 /* Home */
@@ -43,9 +45,13 @@
 	background-color: var(--background-color);
 }
 
-.home h1 {
+.home h1,
+.about h1 {
 	font-weight: 800;
 	color: var(--text-color);
+}
+
+.home h1 {
 	width: 80%;
 	margin: 0 auto;
 }
@@ -55,8 +61,35 @@
 	font-weight: 600;
 }
 
+.home .btn-success:hover {
+	background-color: var(--success-color);
+	border-color: var(--success-color);
+}
+
 @media screen and (min-width: 768px) {
 	.home h1 {
 		margin: 0;
 	}
+}
+
+/* About */
+.about h6 {
+	color: var(--success-color);
+	font-weight: 600;
+}
+
+.about__card-1 {
+	background-color: #fff2e5;
+}
+
+.about__card-2 {
+	background-color: #f8f9fa;
+}
+
+.about__card-3 {
+	background-color: #f0f5f9;
+}
+
+.about__card-image {
+	width: 80px;
 }
