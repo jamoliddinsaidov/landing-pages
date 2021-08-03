@@ -6,7 +6,28 @@
 	--success-color: #21bf73;
 }
 
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--background-color);
+}
+
+.heading-h1 {
+	font-weight: 800;
+	color: var(--text-color);
+}
+
 /* Navigation menu */
+nav {
+	box-shadow: 0 0 2px 2px var(--background-color);
+}
+
 .navbar-brand {
 	font-family: 'Montserrat';
 	font-weight: 600;
@@ -43,12 +64,10 @@
 /* Home */
 .home {
 	background-color: var(--background-color);
-}
-
-.home h1,
-.about h1 {
-	font-weight: 800;
-	color: var(--text-color);
+	min-height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .home h1 {
@@ -92,4 +111,13 @@
 
 .about__card-image {
 	width: 80px;
+}
+
+/* Features */
+.features .container {
+	background-color: var(--background-color);
+}
+
+.features span {
+	font-weight: 600;
 }
