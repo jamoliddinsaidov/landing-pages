@@ -2,6 +2,7 @@
 
 :root {
 	--text-color: #333347;
+	--background-color: #f0f5f9;
 }
 
 /* Navigation menu */
@@ -35,4 +36,27 @@
 	color: #fff;
 	border-color: #fff;
 	outline-color: #fff;
+}
+
+/* Home */
+.home {
+	background-color: var(--background-color);
+}
+
+.home h1 {
+	font-weight: 800;
+	color: var(--text-color);
+	width: 80%;
+	margin: 0 auto;
+}
+
+.home .btn {
+	border-width: 2px;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+	.home h1 {
+		margin: 0;
+	}
 }
