@@ -6,6 +6,10 @@
 	--success-color: #21bf73;
 }
 
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
 body::-webkit-scrollbar {
 	width: 0.5rem;
 }
@@ -23,13 +27,17 @@ body::-webkit-scrollbar-thumb {
 	color: var(--text-color);
 }
 
+section {
+	width: 80%;
+	margin: 0 auto;
+}
+
 /* Navigation menu */
 nav {
 	box-shadow: 0 0 2px 2px var(--background-color);
 }
 
 .navbar-brand {
-	font-family: 'Montserrat';
 	font-weight: 600;
 	color: var(--text-color);
 }
@@ -37,7 +45,6 @@ nav {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link {
-	font-family: 'Montserrat';
 	font-weight: 500;
 	font-size: 14px;
 	padding: 10px 20px;
@@ -85,12 +92,6 @@ nav {
 	border-color: var(--success-color);
 }
 
-@media screen and (min-width: 768px) {
-	.home h1 {
-		margin: 0;
-	}
-}
-
 /* About */
 .about h6 {
 	color: var(--success-color);
@@ -114,10 +115,33 @@ nav {
 }
 
 /* Features */
-.features .container {
+.features .container,
+.stories,
+.stories .card {
 	background-color: var(--background-color);
 }
 
 .features span {
 	font-weight: 600;
+}
+
+/* Results */
+.stories .card img {
+	width: 60px;
+}
+
+.stories-img {
+	width: 70px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+	.home h1 {
+		margin: 0;
+	}
+
+	section {
+		width: 100%;
+	}
 }
