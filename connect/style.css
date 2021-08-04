@@ -77,7 +77,9 @@ nav {
 .pricing .card,
 .faq .container,
 .faq .accordion button,
-.faq .accordion .accordion-body {
+.faq .accordion .accordion-body,
+.contact .form-control,
+.footer {
 	background-color: var(--background-color);
 }
 
@@ -99,13 +101,15 @@ nav {
 }
 
 .home .btn-success:hover,
-.pricing .btn-success:hover {
+.pricing .btn-success:hover,
+.contact .btn-success:hover {
 	background-color: var(--success-color);
 	border-color: var(--success-color);
 }
 
 /* About */
-.about h6 {
+.about h6,
+.contact h6 {
 	color: var(--success-color);
 	font-weight: 600;
 }
@@ -140,6 +144,28 @@ nav {
 	width: 70px;
 	height: 60px;
 	border-radius: 50%;
+}
+
+/* Contact */
+.contact .form-control {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.contact .btn {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* Footer */
+.footer h5 {
+	color: var(--success-color);
+	font-weight: 500;
+	letter-spacing: 4px;
+}
+
+.footer li a {
+	font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
