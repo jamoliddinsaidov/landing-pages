@@ -27,8 +27,8 @@ body::-webkit-scrollbar-thumb {
 	color: var(--text-color);
 }
 
-section {
-	width: 80%;
+section .container {
+	width: 85% !important;
 	margin: 0 auto;
 }
 
@@ -74,7 +74,10 @@ nav {
 .features .container,
 .stories,
 .stories .card,
-.pricing .card {
+.pricing .card,
+.faq .container,
+.faq .accordion button,
+.faq .accordion .accordion-body {
 	background-color: var(--background-color);
 }
 
@@ -144,7 +147,7 @@ nav {
 		margin: 0;
 	}
 
-	section {
+	section .container {
 		width: 100%;
 	}
 }
