@@ -69,8 +69,16 @@ nav {
 }
 
 /* Home */
-.home {
+
+.home,
+.features .container,
+.stories,
+.stories .card,
+.pricing .card {
 	background-color: var(--background-color);
+}
+
+.home {
 	min-height: 85vh;
 	display: flex;
 	flex-direction: column;
@@ -87,7 +95,8 @@ nav {
 	font-weight: 600;
 }
 
-.home .btn-success:hover {
+.home .btn-success:hover,
+.pricing .btn-success:hover {
 	background-color: var(--success-color);
 	border-color: var(--success-color);
 }
@@ -115,12 +124,6 @@ nav {
 }
 
 /* Features */
-.features .container,
-.stories,
-.stories .card {
-	background-color: var(--background-color);
-}
-
 .features span {
 	font-weight: 600;
 }
