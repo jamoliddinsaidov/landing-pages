@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+	--intro-background: hsl(217, 28%, 15%);
+	--main-background: hsl(218, 28%, 13%);
+	--footer-background: hsl(216, 53%, 9%);
+	--testimonials-background: hsl(219, 30%, 18%);
+	--cyan: hsl(176, 68%, 64%);
+	--blue: hsl(198, 60%, 50%);
+	--error: hsl(0, 100%, 63%);
+	--primary-font: 'Raleway', sans-serif;
+	--secondary-font: 'Open Sans', sans-serif;
+	--link-size: 1.1rem;
+}
+
+/* ===== General Styles ===== */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	font-family: var(--primary-font);
+}
+
+p,
+input,
+span {
+	font-family: var(--secondary-font);
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex_space_between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex.flex_column {
+	flex-direction: column;
+}
+
+/* ===== Header ===== */
+header {
+	background-color: var(--intro-background);
+	width: 100%;
+	min-height: 100vh;
+}
+
+/* === Nav === */
+.nav_container {
+	padding: 2em 0;
+}
+
+.link_item {
+	margin-left: 2em;
+}
+
+.link {
+	color: #fff;
+	opacity: 0.6;
+	border-bottom: 1px solid transparent;
+	font-size: var(--link-size);
+	transition: all 300ms linear;
+}
+
+.link:hover {
+	opacity: 1;
+	border-bottom-color: #fff;
+}
