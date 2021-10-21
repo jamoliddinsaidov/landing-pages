@@ -91,7 +91,7 @@ header {
 	position: relative;
 }
 
-/* === Nav === */
+/* ===== Nav ===== */
 .nav_container {
 	padding: 2em 0;
 }
@@ -113,7 +113,7 @@ header {
 	border-bottom-color: #fff;
 }
 
-/* === Intro Banner === */
+/* ===== Intro Banner ===== */
 .intro_banner {
 	width: 70%;
 	margin: 0 auto;
@@ -187,7 +187,7 @@ main {
 	min-height: 100vh;
 }
 
-/* === Features === */
+/* ===== Features ===== */
 #features {
 	width: 70%;
 	margin: 0 auto;
@@ -214,4 +214,49 @@ main {
 
 .feature_content p {
 	opacity: 0.9;
+}
+
+/* ===== Team ===== */
+#team {
+	padding: 3em 0;
+}
+
+.team_img {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.team_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team_content {
+	width: 45%;
+	margin: 0 auto;
+}
+
+.team_content h1 {
+	line-height: 120%;
+	font-size: 3rem;
+	margin-bottom: 0.3em;
+}
+
+.team_content p {
+	margin-bottom: 1em;
+	line-height: 140%;
+	font-size: var(--text-size);
+	opacity: 0.9;
+}
+
+.team_content a {
+	color: var(--blue);
+	border-bottom: 1px solid var(--blue);
+	transition: all 400ms ease;
+}
+
+.team_content a:hover {
+	color: #fff;
+	border-bottom-color: #fff;
 }
