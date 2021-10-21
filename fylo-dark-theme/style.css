@@ -22,6 +22,10 @@
 	color: #fff;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
 	width: 0.5rem;
 }
@@ -84,6 +88,7 @@ header {
 	background-color: var(--intro-background);
 	width: 100%;
 	min-height: 100vh;
+	position: relative;
 }
 
 /* === Nav === */
@@ -161,9 +166,52 @@ header {
 	background: var(--cyan);
 }
 
+.curvy_img {
+	position: absolute;
+	bottom: -5%;
+	right: 0;
+	pointer-events: none;
+}
+
+.banner_img_container,
+.banner_content h1,
+.banner_content p,
+.banner_content button {
+	z-index: 10;
+}
+
 /* ===== Main Section ===== */
 main {
 	background-color: var(--main-background);
 	width: 100%;
 	min-height: 100vh;
+}
+
+/* === Features === */
+#features {
+	width: 70%;
+	margin: 0 auto;
+	padding: 3em 0;
+	flex-wrap: wrap;
+}
+
+.feature_card {
+	width: 40%;
+	margin: 2em auto;
+}
+
+.feature_img {
+	margin-bottom: 1em;
+}
+
+.feature_content {
+	text-align: center;
+}
+
+.feature_content h2 {
+	margin-bottom: 0.5em;
+}
+
+.feature_content p {
+	opacity: 0.9;
 }
