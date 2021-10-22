@@ -150,7 +150,8 @@ header {
 	margin-bottom: 2em;
 }
 
-.banner_content button {
+.banner_content button,
+.contact button {
 	font-size: var(--text-size);
 	background: var(--blue);
 	padding: 1em 4em;
@@ -162,7 +163,8 @@ header {
 	transition: background 400ms ease-in-out;
 }
 
-.banner_content button:hover {
+.banner_content button:hover,
+.contact button:hover {
 	background: var(--cyan);
 }
 
@@ -185,6 +187,7 @@ main {
 	background-color: var(--main-background);
 	width: 100%;
 	min-height: 100vh;
+	padding-bottom: 3em;
 }
 
 /* ===== Features ===== */
@@ -327,4 +330,57 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+	width: 60%;
+	margin: 0 auto;
+	padding: 3em;
+	background-color: var(--main-background);
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 0.5em;
+}
+
+.contact h1 {
+	margin-bottom: 1em;
+}
+
+.contact p {
+	width: 80%;
+	margin: 0 auto 1.5em;
+	text-align: center;
+	font-size: var(--text-size);
+	opacity: 0.8;
+}
+
+.contact form {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contact input {
+	color: var(--main-background);
+	width: 60%;
+	background: #fff;
+	margin-bottom: 2em;
+	outline: none;
+	border-radius: 3em;
+	transition: border 400ms ease-in-out;
+}
+
+.contact input:hover,
+.contact input:focus {
+	border-color: var(--blue);
+}
+
+.contact button {
+	width: 30%;
+}
+
+.contact input,
+.contact button {
+	padding: 1em 2em;
+	font-size: 0.9rem;
+	border: 2px solid transparent;
 }
