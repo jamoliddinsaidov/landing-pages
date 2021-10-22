@@ -275,13 +275,13 @@ main {
 	padding: 1.5em;
 	margin-right: 1.5em;
 	border-radius: 0.5em;
-	box-shadow: 2px 2px 4px 4px var(--intro-background);
+	box-shadow: 2px 2px 3px 3px var(--intro-background);
 	z-index: 10;
 	transition: all 300ms ease-in-out;
 }
 
 .testimonial_card:hover {
-	box-shadow: 2px 2px 6px 6px var(--intro-background);
+	box-shadow: 2px 2px 5px 5px var(--intro-background);
 }
 
 .testiominal_content {
@@ -326,9 +326,9 @@ main {
 	font-size: 0.9rem;
 }
 
-.testimonial_card .quote_img {
+.testimonials .quote_img {
 	position: absolute;
-	top: 0;
+	top: -2%;
 	left: 0;
 }
 
@@ -383,4 +383,79 @@ main {
 	padding: 1em 2em;
 	font-size: 0.9rem;
 	border: 2px solid transparent;
+}
+
+/* ===== Footer ===== */
+footer {
+	background-color: var(--footer-background);
+	width: 100%;
+	height: 100%;
+	padding: 3em 0;
+}
+
+.footer_address {
+	width: 30%;
+}
+
+.address_img {
+	width: 30%;
+	height: 30%;
+	margin-bottom: 1em;
+}
+
+.address_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.address_content {
+	align-items: flex-start;
+}
+
+.address_content p {
+	margin-left: 1em;
+	opacity: 0.9;
+}
+
+.footer_contacts div {
+	justify-content: flex-start;
+	margin-bottom: 1em;
+}
+
+.footer_contacts p {
+	margin-left: 1em;
+}
+
+.footer_sitemap {
+	align-items: flex-start;
+}
+
+.footer_sitemap .second_ul {
+	margin-left: 2em;
+}
+
+.footer_sitemap li {
+	margin-bottom: 1em;
+}
+
+.footer_sitemap a {
+	opacity: 0.8;
+	border-bottom: 1px solid transparent;
+	transition: all 400ms linear;
+}
+
+.footer_sitemap a:hover {
+	opacity: 1;
+	border-bottom-color: #fff;
+}
+
+.footer_socials svg {
+	margin-left: 1em;
+	cursor: pointer;
+	transition: all 400ms linear;
+}
+
+.footer_socials svg:hover {
+	fill: var(--blue);
 }
