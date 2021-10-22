@@ -462,6 +462,196 @@ footer {
 	transition: all 400ms linear;
 }
 
+.footer_socials svg:first-child {
+	margin-left: 0;
+}
+
 .footer_socials svg:hover {
 	fill: var(--blue);
+}
+
+/* ===== Mobile View ===== */
+
+@media screen and (max-width: 480px) {
+	.container {
+		width: 95%;
+	}
+
+	/* === Nav === */
+	.logo_container {
+		width: 35%;
+		height: 35%;
+	}
+
+	.logo_container img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.link_item {
+		margin-left: 1em;
+	}
+
+	.link {
+		font-size: 0.9rem;
+	}
+
+	/* === Intro Banner === */
+	.intro_banner {
+		width: 95%;
+	}
+
+	.banner_img_container {
+		width: 70%;
+	}
+
+	.banner_content {
+		width: 90%;
+	}
+
+	.banner_content h1 {
+		line-height: 130%;
+		font-size: 1.5rem;
+	}
+
+	.banner_content p {
+		width: 95%;
+		font-size: 0.9rem;
+	}
+
+	.banner_content button,
+	.contact button {
+		padding: 1em 3em;
+	}
+
+	.curvy_img {
+		object-fit: contain;
+	}
+
+	/* ===== Features ===== */
+	#features {
+		width: 85%;
+		padding-bottom: 0;
+	}
+
+	.feature_card {
+		width: 100%;
+	}
+
+	/* === Team === */
+	#team {
+		flex-direction: column;
+	}
+
+	.team_img {
+		width: 70%;
+		margin-bottom: 2em;
+	}
+
+	.team_content {
+		width: 90%;
+		text-align: center;
+	}
+
+	.team_content h1 {
+		font-size: 2rem;
+		margin-bottom: 0.4em;
+	}
+
+	.team_content p {
+		line-height: 140%;
+		font-size: 0.9rem;
+	}
+
+	/* === Testimonials === */
+	.testimonials.flex_space_between {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.testimonial_card {
+		width: 95%;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+
+	.testimonials .quote_img {
+		top: -1%;
+		left: 0;
+	}
+
+	/* ===== Contact Section ===== */
+	.contact {
+		width: 95%;
+		padding: 2em;
+		top: -47%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+
+	.contact h1 {
+		margin-bottom: 1em;
+	}
+
+	.contact p {
+		width: 95%;
+		font-size: 0.9rem;
+	}
+
+	.contact form {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.contact button,
+	.contact input {
+		width: 100%;
+	}
+
+	/* ===== Footer ===== */
+	footer {
+		padding-top: 18em;
+	}
+
+	.footer_content {
+		flex-direction: column;
+	}
+
+	.footer_address {
+		width: 90%;
+		margin-bottom: 2em;
+	}
+
+	.address_img {
+		width: 50%;
+		height: 50%;
+		margin: 0 auto 1em;
+	}
+
+	.location {
+		display: none;
+	}
+
+	.address_content p {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.footer_sitemap {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	.footer_socials svg {
+		margin-left: 2em;
+		cursor: pointer;
+		transition: all 400ms linear;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	footer {
+		padding-top: 20em;
+	}
 }
