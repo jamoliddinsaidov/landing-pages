@@ -1,87 +1,87 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	background-color: #000;
-	color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
-	width: 0.4rem;
+  width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
-	background-color: #010001;
+  background-color: #010001;
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 main {
-	width: 75%;
-	margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .page {
-	position: relative;
-	width: 100%;
-	min-height: 65vh;
-	margin: 5rem 0;
+  position: relative;
+  width: 100%;
+  min-height: 65vh;
+  margin: 5rem 0;
 }
 
 .page img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	z-index: -1;
-	opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .page-info {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: rgba(0, 0, 0, 0.7);
-	position: absolute;
-	bottom: 0;
-	left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .page a {
-	color: #fff;
-	text-decoration: none;
-	transition: color 0.3s ease-in-out;
-	font-size: 1.5rem;
-	padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .page a:hover {
-	color: yellow;
+  color: yellow;
 }
 
 /* ===== Mobile view ====== */
 @media screen and (max-width: 480px) {
-	main {
-		width: 90%;
-	}
+  main {
+    width: 90%;
+  }
 
-	.page {
-		min-height: 40vh;
-		margin: 3rem 0;
-	}
+  .page {
+    min-height: 40vh;
+    margin: 3rem 0;
+  }
 
-	.page a {
-		font-size: 1rem;
-	}
+  .page a {
+    font-size: 1rem;
+  }
 }
